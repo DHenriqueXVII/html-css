@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none   
+        }
+
+        div:hover {
+            color: mediumblue;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        div:hover > div > p {
+            display: block;
+            background-color: white;
+            color: black;
+            height: 200px;
+            width: 200px;
+            padding: 8px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+
+    <p>Passe o mouse no texto abaixo.</p>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quam nisi blanditiis eius, et a sunt culpa, dolores optio ducimus iure aliquam enim assumenda architecto. Deleniti pariatur reiciendis in ad! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci eum animi cupiditate qui repudiandae saepe quia, eos optio praesentium quaerat commodi fugiat minima unde deleniti, dolore earum culpa dicta maiores.
+        <p>Pegadinha do malandro, hehe.</p>
+
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat nulla praesentium dolores voluptas officiis qui expedita voluptatum tempora ab quibusdam, ex perspiciatis, sint voluptates delectus omnis accusantium nam deleniti recusandae?</p>
+        </div>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, eaque. Ducimus, voluptates, commodi quibusdam provident maiores aliquam ut unde nesciunt quae odit consequatur ratione! Dolor iusto incidunt consectetur consequuntur quaerat!</p>
+</body>
+</html>
